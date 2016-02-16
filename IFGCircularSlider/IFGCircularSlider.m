@@ -510,6 +510,7 @@ static const CGFloat kFitFrameRadius = -1.0;
         self.angleFromNorth = floor([IFGCircularTrig angleRelativeToNorthFromPoint:self.centerPoint
                                                                              toPoint:bestGuessPoint]);
         [self setNeedsDisplay];
+        [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
 }
 
